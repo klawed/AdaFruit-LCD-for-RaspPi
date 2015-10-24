@@ -14,7 +14,12 @@ PATH=/sbin:/bin
 
 do_start () {
 	log_action_msg "Starting lcd service"
-	exec /opt/node/bin/node /home/pi/src/lcd/app.js
+	exec /opt/node/bin/node /home/pi/src/lcd/app.js start
+}
+
+do_stop() {
+	log_action_msg "Stopping lcd service"
+	exec /opt/node/bin/node /home/pi/src/lcd/app.js stop
 }
 
 case "$1" in
@@ -22,11 +27,10 @@ case "$1" in
 	do_start
 	;;
   restart|reload|force-reload)
-	echo "Error: argument '$1' not supported" >&2
-	exit 3
+	do_stop && do_start
 	;;
   stop)
-	# No-op
+	do_stop
 	;;
   *)
 	echo "Usage: $0 start|stop" >&2
