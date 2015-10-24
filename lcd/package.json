@@ -4,11 +4,11 @@
   "description": "description:  Library for http://www.adafruit.com/products/1115?gclid=CjwKEAjwho2xBRD0mpzUvsya6SgSJAAkRepSsQ1uuy8X1vyNawPeKUuR_HiFyJASwAjAybQyVd0faRoCwxHw_wcB",
   "main": "app.js",
   "dependencies": {
-    "i2c": "^0.1.4",
-    "adafruit-i2c-lcd": "^0.0.1"
+    "i2c": "0.2.0",
+    "adafruit-i2c-lcd": "*"
   },
   "devDependencies": {
-    "coffee-script": "^1.7.1"
+    "coffee-script": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
