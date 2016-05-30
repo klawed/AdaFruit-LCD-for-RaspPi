@@ -5,6 +5,7 @@ var sys = require('sys');
 var exec = require('child_process').exec;
 var LCDPLATE=require('adafruit-i2c-lcd').plate;
 var lcd= new LCDPLATE( '/dev/i2c-1', 0x20);
+var mylcd = require('lcd');
 
 var SELECT = 1
 var WEST = 16
