@@ -14,7 +14,7 @@ PATH=/sbin:/bin
 
 do_start () {
 	log_action_msg "Starting lcd service"
-	exec /opt/node/bin/node /home/pi/src/lcd/app.js start
+	exec /opt/node/bin/node /home/pi/src/lcd/app.js start &
 }
 
 do_stop() {
