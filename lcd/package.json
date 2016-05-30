@@ -4,8 +4,9 @@
   "description": "description:  Library for http://www.adafruit.com/products/1115?gclid=CjwKEAjwho2xBRD0mpzUvsya6SgSJAAkRepSsQ1uuy8X1vyNawPeKUuR_HiFyJASwAjAybQyVd0faRoCwxHw_wcB",
   "main": "app.js",
   "dependencies": {
+    "adafruit-i2c-lcd": "*",
     "i2c": "0.2.0",
-    "adafruit-i2c-lcd": "*"
+    "lcd-wrapper": "file:../../lcd-wrapper"
   },
   "devDependencies": {
     "coffee-script": "*"
