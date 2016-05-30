@@ -1,5 +1,5 @@
 # AdaFruit LCD for Raspberry Pi
-This repo provides scripts to support for [this awesome display](http://www.adafruit.com/products/1115?gclid=CjwKEAjwho2xBRD0mpzUvsya6SgSJAAkRepSsQ1uuy8X1vyNawPeKUuR_HiFyJASwAjAybQyVd0faRoCwxHw_wcB)
+This repo provides scripts to support for [this display](http://www.adafruit.com/products/1115?gclid=CjwKEAjwho2xBRD0mpzUvsya6SgSJAAkRepSsQ1uuy8X1vyNawPeKUuR_HiFyJASwAjAybQyVd0faRoCwxHw_wcB) on a Raspberry Pi board.  My usecase is getting my headless pi's ip address when it boots up so that I can ssh to it.
 
 It consists of a node.js app and an init script (SysVinit, sorry Upstart fans!) that launches the app as a daemon and sends current IP address of `eth0` or `wlan0`.
 
